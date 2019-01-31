@@ -1,0 +1,25 @@
+{
+  "name": "wli",
+  "version": "1.0.0",
+  "description": "wikipedia for revolution of iran\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bpedia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/a-sabagh/wli.git"
+  },
+  "keywords": [
+    "wp"
+  ],
+  "author": "Abolfazl Sabagh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/a-sabagh/wli/issues"
+  },
+  "homepage": "https://gitlab.com/a-sabagh/wli#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
