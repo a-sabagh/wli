@@ -1,0 +1,17 @@
+/*SASS PATH: components/widgets/papular-posts*/
+.papular-posts{
+	li {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.like{
+			position: relative;
+			color: $color1;
+			&::before {
+				font-family: fontawesome;
+				content: "\f164 ";
+				margin-right: 5px;
+			}
+		}
+	}
+}

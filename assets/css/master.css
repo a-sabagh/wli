@@ -201,6 +201,10 @@ p {
   border-bottom: 1px solid #e9e9e9;
 }
 
+.align-left {
+  text-align: left;
+}
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10216,7 +10220,7 @@ body {
   background-color: #232429;
 }
 #footer .top-footer {
-  padding: 1.875em 0;
+  padding: 1.4em 0;
   background-color: #34353c;
 }
 #footer .top-footer ul {
@@ -10244,6 +10248,43 @@ body {
 }
 #footer .top-footer .top-footer-socials li:last-child {
   margin-left: 0;
+}
+#footer .mid-footer {
+  margin-top: 3em;
+}
+#footer .mid-footer .widg h3 {
+  color: inherit;
+  font-size: 1.3em;
+}
+#footer .mid-footer .widg .widg-content li {
+  line-height: 2em;
+}
+#footer .bottom-footer {
+  border-top: 1px solid #424242;
+  padding: 1.4em 0;
+}
+#footer .bottom-footer .back-to-top {
+  color: #8e909d;
+  display: inline-block;
+}
+#footer .bottom-footer .copyright {
+  margin-bottom: 0;
+}
+
+/*SASS PATH: components/widgets/papular-posts*/
+.papular-posts li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.papular-posts li .like {
+  position: relative;
+  color: #40b1c2;
+}
+.papular-posts li .like::before {
+  font-family: fontawesome;
+  content: "\f164 ";
+  margin-right: 5px;
 }
 
 .home-body .home-title {

@@ -2,7 +2,7 @@
 	color: $footerColor;
 	background-color: $footerBg;
 	.top-footer{
-		padding: 1.875em 0;
+		padding: 1.4em 0;
 		background-color: $footerTopBg;
 		ul {
 			margin-bottom: 0;
@@ -32,9 +32,28 @@
 		}//top-footer-socials
 	}//top-footer
 	.mid-footer {
-		
+		margin-top: 3em;
+		.widg {
+			h3{
+				color: inherit;
+				font-size: 1.3em;
+			}
+			.widg-content {
+				li {
+					line-height: 2em;
+				}
+			}
+		}
 	}//mid-footer
 	.bottom-footer {
-	
+		border-top: 1px solid $borderColor2;
+		padding: 1.4em 0;
+		.back-to-top {
+			color: $footerColor2;
+			display: inline-block;
+		}
+		.copyright{
+			margin-bottom: 0;
+		}
 	}//bottom-footer
 }
