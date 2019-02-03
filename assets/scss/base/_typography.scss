@@ -1,0 +1,34 @@
+/*SASS PATH: base/typography */
+*:not([class*='icon']):not(.fa):not(i) {
+    font-family: $mainFont;
+    letter-spacing: normal;
+}
+
+body, div, span, h1, h2, h3, h4, h5, h6, p, a,section, mark,
+ol, ul, li, form, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, details, figcaption, footer, header, hgroup, menu, nav, output,
+input[type="text"] , input[type="textarea"] , input[type="submit"] {
+    font-family: $mainFont;
+    letter-spacing: normal;
+}
+a , span {
+    font-family: $mainFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $mainFont;
+    letter-spacing: normal;
+}
+
+p {
+    font-family: $mainFont;
+    letter-spacing: normal;
+    line-height: 1.6em;
+}
+.fa , [class*='fa-'] {font-family: "FontAwesome" !important;}
+.ab-icon {font: 400 20px/1 "dashicons" !important;}
+.dashicons {font-family: "dashicons" !important;}
+.font-number{
+    display: inline-block;
+    direction: ltr;
+}

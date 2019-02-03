@@ -1,0 +1,23 @@
+//abstract
+@import 
+	"abstract/variables",
+	"abstract/mixins";
+//base
+@import
+	"base/font",
+	"base/reset.scss",
+	"base/typography",
+	"base/general";
+//vendor
+@import 
+	"vendor/bootstrap",
+	"vendor/fontAwesome";
+//components
+@import
+	"components/header",
+	"components/search",
+	"components/navigation",
+	"components/footer";
+//pages
+@import 
+	"pages/home";

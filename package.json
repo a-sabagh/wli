@@ -1,7 +1,7 @@
 {
   "name": "wli",
   "version": "1.0.0",
-  "description": "wikipedia for revolution of iran\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bpedia",
+  "description": "wikipedia for revolution of iran",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://gitlab.com/a-sabagh/wli#readme",
   "dependencies": {
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "font-awesome": "^4.7.0"
   }
 }
