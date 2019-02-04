@@ -1,0 +1,16 @@
+.archive-post-list {
+	article.post-item {
+		padding: 1em 2em;
+		.fa {
+			color: $text2;
+			margin:{
+				top:  .3em;
+				left: .5em;
+			}
+		}
+		&:hover {
+			background: #eaedf3;
+			@include mix-transition(.3s);
+		}
+	}
+}

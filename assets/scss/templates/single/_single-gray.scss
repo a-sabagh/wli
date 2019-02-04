@@ -47,10 +47,14 @@
 		padding: 3em 0;
 		.widg {
 			border-bottom: 1px solid $borderColor1;
-			padding: 1em 2em;
+			padding: 1em 0;
 			.widg-title {
 				font-size: 1em;
 				color: $text2;
+				padding: 0 2em;
+			}
+			&:last-child{
+				border-bottom: 0;
 			}
 		}
 	}

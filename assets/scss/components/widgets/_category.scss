@@ -1,14 +1,59 @@
 .single-category-widg {
 	ul {
 		li {
-		font-size: 1.1em;
+			font-size: 1em;
+			line-height: 2.5em;
 			color: $text1;
-			a {
-				color: inherit;
+			.post-counts {
+				color: $text2;
+				font-size: .8em;
+				margin-right: .5em;
 			}
+			ul {
+				display: none;
+				li {
+					padding: 0 2.5em;
+					.fa {
+						color: $text2;
+						padding-left: .5em;
+						font-size: .9em;
+					}
+					a {
+						color: inherit;
+						font-weight: lighter;
+					}
+					&.active {
+						background: $bg1;
+						border-right: 3px solid $color1;
+					}
+				}
+			}
+
 		}
+	}
+	.widg-content > ul {
+		
 	 	& > li {
-			
+			.expand-posts {
+				float: left;
+				margin-left: 2em;
+				border: 1px solid $text2;
+				$expandWidth: 23px;
+				width: $expandWidth;
+				height: $expandWidth;
+				cursor: pointer;
+				text-align: center;
+				line-height: $expandWidth;
+				@include border-radius(3px);
+				.fa {
+					display: inline-block;
+				}
+			}
+			& > a {
+				font-weight: bold;
+				color: inherit;
+				padding-right: 2em;
+			}
 		}
 	}
 }

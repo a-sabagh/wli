@@ -19,7 +19,10 @@
 	"components/search",
 	"components/navigation",
 	"components/footer",
-	"components/widgets/papular-posts";
+	"components/pagination",
+	"components/widgets/papular-posts",
+	"components/widgets/category",
+	"components/widgets/latest-posts";
 //pages
 @import 
 	"pages/home";
@@ -29,4 +32,5 @@
 	"templates/single/editor-content",
 	"templates/single/category",
 	"templates/single/like",
-	"templates/single/related";
+	"templates/single/related",
+	"templates/archive";
