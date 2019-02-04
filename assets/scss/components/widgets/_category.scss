@@ -1,0 +1,14 @@
+.single-category-widg {
+	ul {
+		li {
+		font-size: 1.1em;
+			color: $text1;
+			a {
+				color: inherit;
+			}
+		}
+	 	& > li {
+			
+		}
+	}
+}
