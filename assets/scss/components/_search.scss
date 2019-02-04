@@ -1,5 +1,5 @@
 .search-wrapper {
-	padding: 10em 0;
+	padding: 9.5em 0;
 	.search-form-wrapper{
 		position: relative;
 		z-index: 1;
@@ -20,6 +20,7 @@
 			top: 15px;
 			cursor: pointer;
 			background-color: transparent;
+			color:  $color1;
 		}
 		.search-form-sujestion {
 			display: inline-block;

@@ -1,6 +1,6 @@
 .navigation-wrapper {
+	padding: 2em;
 	.navigation {
-	padding: 20px 0;
 	@include mix-transition(200ms);
 	z-index: 10;
 	border-bottom: 1px solid transparent;

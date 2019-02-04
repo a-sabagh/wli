@@ -1,5 +1,8 @@
 #header{
 	position: relative;
+	&.without-search {
+		padding-bottom: 40px;
+	}
 	background: {
 		image: url("img/header-bg.jpg");
 		position: center;

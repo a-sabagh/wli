@@ -2,11 +2,9 @@ body{
 	text-align: right;
 }
 //bootstrap container 
-$container-max-widths: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1340px
+    xl: 85%
 );

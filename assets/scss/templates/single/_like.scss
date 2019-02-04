@@ -1,0 +1,20 @@
+.single-like {
+	padding: $singlePadding;
+	//border-top: 1px solid $borderColor1;
+	.line {
+		margin: 0 1em;
+	}
+	.lj-like-wp {
+		margin-right: .5em;
+		font-size: 1.2em;
+	}
+	.lj-like-wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid $borderColor1;
+		padding: .5em 1em;
+		@include border-radius($radius4);
+	}
+}

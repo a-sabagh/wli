@@ -1,0 +1,75 @@
+/*SASS PATH: templates/single/editor-content */
+
+$singlePadding: 1em 2em;
+.single-post{
+	.editor-content {
+		padding: $singlePadding;
+		img {
+			max-width: 100%;
+			height: auto;
+			display: inline-block;
+		}
+
+		.table-ltr td {
+			direction: ltr;
+		}
+
+		ol li {
+			list-style-type: decimal;
+			margin-right: 1.5em;
+		}
+
+		ul li {
+			list-style: disc;
+			list-style-position: inside;
+		}
+
+		ul li > ul li {
+			list-style-type: circle;
+		}
+		ul li > ul li > ul li {
+			list-style-type: square;
+		}
+
+		blockquote {
+			border-left: none;
+			border-right: 5px solid $color2;
+			background: rgba(0, 0, 0, .05);
+			margin: .3em 0;
+			padding: .8em;
+		}
+
+		code {
+			background: $text2;
+			padding: 0 .5em;
+			font-family: inherit;
+			margin: 2px 0;
+			direction: ltr !important;
+			text-align: left;
+			display: inline-block;
+			font-weight: lighter;
+			letter-spacing: .06em;
+			font-size: .8em;
+		}
+
+		pre {
+			direction: ltr !important;
+			margin: 4em 0;
+			line-height: 1.5em;
+			padding: .7em;
+			overflow: scroll;
+		}
+
+		pre * {
+			font-family: arial;
+		}
+
+		.english-font {
+			font-family: arial;
+			display: inline-block;
+			direction: ltr !important;
+			text-align: left;
+			letter-spacing: 1px;
+		}
+	}
+}
