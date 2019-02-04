@@ -24,11 +24,11 @@
 				margin-bottom: 2.3em;
 			}
 		}
-		.cat-item {
+		@at-root .cat-item {
 			height: 100%;
 			border: 1px solid $borderColor1;
 			border-radius: $radius1;
-			padding: 2.3em 1.5em;
+			padding: 2.3em 1.8em;
 			.fa {
 				color: $color1;
 				font-size: 2em;

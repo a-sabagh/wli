@@ -25,7 +25,8 @@
 	"components/widgets/latest-posts";
 //pages
 @import 
-	"pages/home";
+	"pages/home",
+	"pages/categories";
 //templates
 @import
 	"templates/single/single-gray",
@@ -33,4 +34,5 @@
 	"templates/single/category",
 	"templates/single/like",
 	"templates/single/related",
-	"templates/archive";
+	"templates/archive",
+	"templates/page";
