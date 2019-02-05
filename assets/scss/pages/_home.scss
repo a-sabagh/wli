@@ -2,8 +2,20 @@
 	.home-title {
 		line-height: 1.5em;
 		margin: 1em auto;
+		@include media-breakpoint-down(sm){
+			font-size: 1.5em;
+			br {
+				display: none;
+			}
+		}
 	}
 	.cat-all {
+		@include media-breakpoint-down(sm){
+			flex-direction: column;
+			.line {
+				margin: .6em auto;
+			}
+		}
 		margin-bottom: $Space;
 		.line {
 			margin: 0 1em;

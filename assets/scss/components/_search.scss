@@ -1,5 +1,8 @@
 .search-wrapper {
-	padding: 9.5em 0;
+	@include media-breakpoint-down(sm){
+		display: none;
+	}
+	padding: 8vw 0 11vw;
 	.search-form-wrapper{
 		position: relative;
 		z-index: 1;

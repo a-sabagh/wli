@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	/*Category accordian list*/
 	var singleCategory = $(".single-category-widg");
 	if(singleCategory.length){
 		singleCategory.find(".posts-list").hide();
@@ -9,4 +10,9 @@ jQuery(document).ready(function($){
 			$(this).next("ul").slideToggle("normal");
 		});
 	}
-});
+	/*Responsive menu toggle*/
+	$(".menu-toggler,.arrow").on('click',function(e){
+		e.preventDefault();
+		$(this).next("ul").slideToggle();
+	});
+});//jQuery

@@ -1,5 +1,8 @@
 .single-like {
 	padding: $singlePadding;
+	@include media-breakpoint-down(sm){
+		padding: $singlePaddingSmall;
+	}
 	//border-top: 1px solid $borderColor1;
 	.line {
 		margin: 0 1em;

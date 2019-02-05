@@ -1,5 +1,5 @@
 .categories-wrapper {
-	.col-md-4 {
+	.col-md-6 {
 		margin-bottom: 1.875em;
 	}
 	.category-item {
@@ -12,11 +12,11 @@
 				color: $text2;
 			}
 		}
-		.papular-posts {
+		ul {
 			width: 100%;
 			li {
 				color: $text1;
-				list-style: none;
+				list-style: none !important;
 				font-size: 1rem;
 				a {
 					color: inherit;

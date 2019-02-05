@@ -1,8 +1,9 @@
 /*SASS PATH: templates/single/editor-content */
-
-$singlePadding: 1em 2em;
 .single-post{
 	.editor-content {
+		@include media-breakpoint-down(sm){
+			padding: $singlePaddingSmall;
+		}
 		padding: $singlePadding;
 		img {
 			max-width: 100%;

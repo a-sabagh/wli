@@ -1,8 +1,15 @@
 #main.single-gray {
 	background-color: $bg1;
+	@include media-breakpoint-down(md){
+		padding: 0 !important;
+	}
 	.single-content {
 		background-color: $white;
 		margin: 0 2.5em;
+		@include media-breakpoint-down(md){
+			margin: 0 !important;
+			top: 0 !important;
+		}
 		position: relative;
 		top: -40px;
 	}
@@ -37,6 +44,11 @@
 					}
 				}//li
 			}//ul
+		}
+		@include media-breakpoint-down(sm){
+			h1 {
+				font-size: 1.5em;
+			}
 		}
 	}//single-header
 	.main-content {

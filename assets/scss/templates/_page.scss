@@ -1,3 +1,8 @@
 .page-content {
     padding: 3em 0;
+    @include media-breakpoint-down(sm){
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 }

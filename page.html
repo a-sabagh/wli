@@ -8,19 +8,28 @@
 <body class="single-post">
 	<header id="header" class="container-fluid">
 		<div class="container">
-			<div class="row navigation-wrapper align-items-center">
-				<nav class="col-md-9 navigation">
+			<div class="row navigation-wrapper align-items-center ">
+				<nav class="col-md-9 col-4 navigation">
+					<a href="#" class="menu-toggler hidden-md" ><i class="fa fa-bars"></i></a>
 					<ul>
 						<li class="current-menu-item"><a href="#">خانه</a></li>
-						<li><a href="#">دانشنامه</a></li>
+						<li>
+							<a href="#">دانشنامه</a>
+							<span class="arrow"><i class="fa fa-plus"></i></span>
+							<ul>
+								<li><a href="">انقلاب اسلامی</a></li>
+								<li><a href="">کامران نجف زاده</a></li>
+								<li><a href="">حسین فاطمی</a></li>
+							</ul>
+						</li>
 						<li><a href="#">سوالات متداول</a></li>
 						<li><a href="#">اخبار</a></li>
 					</ul>
 				</nav>
-				<a href="#" class="col-md-3 header-logo d-flex justify-content-end" title="صعود چهل ساله" >صعود چهل ساله</a>
+				<a href="#" class="col-md-3 col-8 header-logo d-flex justify-content-end" title="صعود چهل ساله" >صعود چهل ساله</a>
 			</div><!--.navigation-wrapper-->
 		</div><!--.container-->
-	</header>
+	</header><!--#header-->
 	<article id="main" class="container">
 		<div class="page-content">
 		<header class="single-header">
@@ -83,7 +92,7 @@
 		<div class="top-footer">
 			<div class="container">
 				<div class="row justify-content-center align-items-center">
-					<div class="col-md-8 top-footer-menu">
+					<div class="col-md-8 top-footer-menu text-md-right text-center">
 						<ul>
 							<li><a href="#">دانشنامه</a></li>
 							<li><a href="#">سوالات متداول</a></li>
@@ -91,7 +100,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<div class="top-footer-socials">
+						<div class="top-footer-socials text-md-left text-center">
 							<ul>
 								<li class="social-facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
 								<li class="social-instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
@@ -146,16 +155,16 @@
 		<div class="bottom-footer">
 			<div class="container">
 				<div class="row justfy-content-between aling-items-center">
-					<div class="col">
+					<div class="col-sm text-center text-sm-right">
 						<p class="copyright">تمامی حقوق محفوظ است</p>
 					</div>
-					<div class="col align-left">
+					<div class="col-sm text-sm-left text-center">
 						<a href="#" class="back-to-top">برو به بالا</a>
 					</div>
 				</div><!--.row-->
 			</div><!--.container-->
 		</div><!--.bottom-footer-->
-	</footer>
+	</footer><!--#footer-->
 	<script src="node_modules/jquery/dist/jquery.min.js" ></script> 
 	<script src="assets/js/master.js" ></script> 
 </body>

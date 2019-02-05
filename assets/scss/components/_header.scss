@@ -1,7 +1,9 @@
 #header{
 	position: relative;
 	&.without-search {
-		padding-bottom: 40px;
+		@include media-breakpoint-up(lg){
+			padding-bottom: 40px;
+		}
 	}
 	background: {
 		image: url("img/header-bg.jpg");
