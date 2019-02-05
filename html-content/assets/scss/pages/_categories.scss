@@ -1,0 +1,33 @@
+.categories-wrapper {
+	.col-md-6 {
+		margin-bottom: 1.875em;
+	}
+	.category-item {
+		.article-label {
+			width: 100%;
+			.line {
+				margin-right: .5em;
+			}
+			label {
+				color: $text2;
+			}
+		}
+		ul {
+			width: 100%;
+			li {
+				color: $text1;
+				list-style: none !important;
+				font-size: 1rem;
+				a {
+					color: inherit;
+					text-align: right;
+				}
+				.fa {
+					color: $text2;
+					font-size: .9rem;
+					margin-left: .5em;
+				}
+			}
+		}
+	}
+}

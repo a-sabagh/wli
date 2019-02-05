@@ -1,0 +1,17 @@
+.post-category {
+	padding: $singlePadding;
+	@include media-breakpoint-down(sm){
+		padding: $singlePaddingSmall;
+	}
+	border-top: 1px solid $borderColor1;
+	ul {
+		margin-bottom: 0;
+		.fa {
+			color: $text2;
+			margin-left: 5px;
+		}
+		a {
+			color: $color2;
+		}
+	}
+}

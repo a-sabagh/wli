@@ -1,7 +1,6 @@
 /nbproject/
-
 .DS_Store
-
 assets/.sass-cache/
-
 assets/css/master.css.map
+*.tmp
+

@@ -1,0 +1,21 @@
+.related-posts {
+	padding: $singlePadding;
+	@include media-breakpoint-down(sm){
+		padding: $singlePaddingSmall;
+	}
+	border-top: 1px solid $borderColor1;
+	margin-top: 1em;
+	ul {
+		margin-bottom: 0;
+		.fa {
+			color: $text2;
+			margin-left: 5px;
+		}
+		a {
+			color: $color2;
+		}
+		.like {
+			padding-right: 1em;
+		}
+	}
+}
