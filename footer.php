@@ -3,11 +3,13 @@
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-8 top-footer-menu text-md-right text-center">
-                    <ul>
-                        <li><a href="#">دانشنامه</a></li>
-                        <li><a href="#">سوالات متداول</a></li>
-                        <li><a href="#">اخبار</a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'container' => '',
+                        'theme_location' => 'footer',
+                        'depth' => '1'
+                    ));
+                    ?>
                 </div>
                 <div class="col-md-4">
                     <div class="top-footer-socials text-md-left text-center">
@@ -24,41 +26,11 @@
     <div class="mid-footer">
         <div class="container">
             <div class="row">
-                <section class="col-md-4 widg">
-                    <h3 class="widg-title">درباره ما</h3>
-                    <div class="widg-content">
-                        <p>بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصریبی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری</p>
-                    </div>
-                </section>
-                <section class="col-md-4 widg">
-                    <h3 class="widg-title">مقالات اخیر</h3>
-                    <div class="widg-content">
-                        <ul>
-                            <li><a href="">طراح گرافیک از گرافیک این گرافیک متن</a></li>
-                            <li><a href="">طراح گرافیک از این متن</a></li>
-                            <li><a href="">طراح گرافیک از این گرافیک متن</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="col-md-4 widg">
-                    <h3 class="widg-title">محبوب ترین مقالات</h3>
-                    <div class="widg-content">
-                        <ul class="papular-posts">
-                            <li>
-                                <a href="">گرافیک ازین</a>
-                                <span class="like">21</span>
-                            </li>
-                            <li>
-                                <a href="">این متن</a>
-                                <span class="like">41</span>
-                            </li>
-                            <li>
-                                <a href="">طراح گرافیک</a>
-                                <span class="like">14</span>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                <?php 
+                if(is_active_sidebar("footer_side")){
+                    dynamic_sidebar("footer_side");
+                }
+                ?>
             </div><!--.row-->
         </div>
     </div><!--.mid-footer-->
