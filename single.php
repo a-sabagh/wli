@@ -10,8 +10,10 @@
                         the_post();
                         ?>
                         <header class="single-header">
-                            <?php echo wli_breadcrumbs(); ?>
-                            <h1 class="single-title text-center"><?php the_title(); ?></h1>
+                            <?php
+                            echo wli_breadcrumbs(); 
+                            get_template_part("templates/header");
+                            ?>
                         </header>
                         <section class="editor-content">
                             <?php the_content(); ?>
