@@ -4,10 +4,7 @@
  * init
  */
 function wli_init() {
-
     add_image_size("widget-thumb", 80, 80);
-    remove_image_size('woocommerce_thumbnail');
-
     if (!session_id()) {
         session_start();
     }
@@ -32,8 +29,21 @@ add_action("after_setup_theme", "wli_setup");
 /**
  * register nav menus
  */
+class WLI_Arrow_Walker_Nav_Menu extends Walker_Nav_Menu {
+
+    function start_lvl(&$output, $depth, $args) {
+        $indent = str_repeat("\t", $depth);
+        if ('header' == $args->theme_location && $depth == 0) {
+            $output .='<span class="arrow"><i class="fa fa-plus"></i></span>';
+        }
+        $output .= "\n$indent<ul class=\"sub-menu\">\n";
+    }
+
+}
+
 $menu_position = array(
-    "header" => "",
+    "header" => "منوی اصلی",
+    "footer" => "منوی فوتر"
 );
 register_nav_menus($menu_position);
 
@@ -47,12 +57,14 @@ function unregister_default_widget() {
 
 add_action('widgets_init', 'unregister_default_widget');
 
-/**
+
+/*
  * register sidebars
  */
+
 function wli_widgets_init() {
     register_sidebar(array(
-        'name' => __('archive sidebar','TEXTDOMAIN'),
+        'name' => 'فوتر',
         'id' => 'archive_side',
         'before_widget' => '<section class="widg">',
         'before_title' => '<div class="widg-title"><h4>',
@@ -63,6 +75,9 @@ function wli_widgets_init() {
 
 add_action("widgets_init", "wli_widgets_init");
 
+/**
+ * destroy session
+ */
 function wli_logout() {
     session_destroy();
 }
