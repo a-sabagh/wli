@@ -4,7 +4,7 @@ function wli_search() {
     ?>
     <div class="search-wrapper row justify-content-center align-items-center">
         <div class="col-md-7 search-form-wrapper text-center">
-            <form action="" class="search-form">
+            <form action="<?php echo home_url(); ?>" class="search-form" method="get">
                 <input class="search-input" type="text" name="s" placeholder="جستجو در دانشنامه">
                 <button class="search-submit" type="submit" value="" title="جستجو"><i class="fa fa-search"></i></button>
             </form>

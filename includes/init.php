@@ -65,10 +65,10 @@ add_action('widgets_init', 'unregister_default_widget');
 function wli_widgets_init() {
     register_sidebar(array(
         'name' => 'فوتر',
-        'id' => 'archive_side',
-        'before_widget' => '<section class="widg">',
-        'before_title' => '<div class="widg-title"><h4>',
-        'after_title' => '</h4></div><div class="widg-content">',
+        'id' => 'footer_side',
+        'before_widget' => '<section class="col-md-4 widg">',
+        'before_title' => '<h3 class="widg-title">',
+        'after_title' => '</h3><div class="widg-content">',
         'after_widget' => '</div></section>',
     ));
 }
