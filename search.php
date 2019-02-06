@@ -6,7 +6,7 @@ get_header();
         <div class="row no-gutters">
             <?php get_sidebar(); ?>
             <div class="col-md-8 main-content order-md-1 order-0">
-                <?php get_template_part("templates/archive/header"); ?>
+                <?php get_template_part("templates/header"); ?>
                 <section class="archive-post-list">
                     <?php
                     if (have_posts()):
