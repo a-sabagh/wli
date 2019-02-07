@@ -5,8 +5,17 @@
         <meta name="viewport" content="width=device-width , initial-scale=1">
         <?php wp_head(); ?>
     </head>
+    <?php
+    $header_classes = array();
+    $header_classes[] = (is_home() or is_front_page()) ? "with-search " : "without-search ";
+    $header_classes[] = (is_page()) ? "page-header " : " ";
+    ?>
     <body <?php body_class(); ?>>
-        <header id="header" class="container-fluid <?php echo (is_home() or is_front_page()) ? " with-search" : "without-search"; ?>">
+        <header id="header" class="container-fluid <?php
+        foreach ($header_classes as $class):
+            echo $class;
+        endforeach;
+        ?>">
             <div class="container">
                 <div class="row navigation-wrapper align-items-center">
                     <nav class="col-md-9 col-4 navigation">

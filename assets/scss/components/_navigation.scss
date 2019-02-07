@@ -1,142 +1,142 @@
 .navigation-wrapper {
-	padding: 2em;
-	@include media-breakpoint-down(sm) {
-		position: relative;
-		padding: 1em;
-	}
-	.navigation {
-		@include mix-transition(200ms);
-		z-index: 10;
-		border-bottom: 1px solid transparent;
-		.menu-toggler{
-			display: none;
-		}
-		ul {
-			margin-bottom: 0;
-		}
-		& > ul > li{
-			position: relative;
-			ul {
-				display: none;
-			}
-			@include media-breakpoint-up(md){
-				display: inline-block;
-				padding-bottom: .2em;
-				margin-left: 7px;
-				&.current-menu-item {
-					a {
-						border-color: $white;
-					}
-				}
-				&:last-child{	
-					margin-left: 0;
-				}
-				&:hover {
-					ul {
-						display: block;
-					}
-				}//hover
-				.arrow {
-					display: none;
-				}
-				& > a {
-					color: $white;
-					display: block;
-					position: relative;
-					padding: 5px 12px;
-					font-size: 1em;
-					border: 1px solid transparent;
-					@include border-radius($radius1);
-					&:hover{
-						color: $text1;
-						background-color: $white;
-					}
-				}//a
-			
-				ul{
-					display: none;
-					position: absolute;
-					right: 0;
-					top: 2.4em;
-					background: $text1;
-					min-width: 12em;
-					@include border-radius($radius1);
-					li {
-						color: $white;
-							&:first-child a{
-								@include border-top-radius($radius1);
-							}
-							&:last-child a{
-								@include border-bottom-radius($radius1);
-							}
-						a{
-							display: block;
-							color: inherit;
-							padding: .4em 1em;
-							&:hover {
-								background-color: $color1;
-							}
-						}
-					}
-				}
-			}//@include
-		}//ul > li
-		@include media-breakpoint-down(sm){
-			position: static;
-			.menu-toggler {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				color: $white;
-				border: 1px solid $white;
-				padding: .7em 0;
-				width: 40px;
-				text-align: center;
-				@include border-radius($radius1);
-			}
-			& > ul {
-				display: none;
-				background: #232429;
-				position: absolute;
-				width: 100%;
-				top: 4em;
-				right: 0;
-				li {
-					position: relative;
-					display: block;
-					list-style: none;
-					color: $white;
-					a{
-						display: block;
-						color: inherit;
-						padding: .7em 1em;
-					}
-					.arrow {
-						cursor: pointer;
-						display: block;
-						position: absolute;
-						left: 0;
-						top: 0;
-						bottom: 0;
-						width: 2.8em;
-						z-index: 999;
-						text-align: center;
-						line-height: 2.8em;
-						height: 2.8em;
-					}
-				}//li
-				ul {
-					padding-right: 1em;
-				}
-			}//ul
-		}//@include
-	}//navigation
-	.header-logo{
-		text-align: center;
-		font-weight: bold;
-		color: $white;
-		position: relative;
-		z-index: 1;
-		white-space: nowrap;
-	}
+    padding: 2em;
+    @include media-breakpoint-down(sm) {
+        position: relative;
+        padding: 1em;
+    }
+    .navigation {
+        @include mix-transition(200ms);
+        z-index: 10;
+        border-bottom: 1px solid transparent;
+        .menu-toggler{
+            display: none;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+        & > ul > li{
+            position: relative;
+            ul {
+                display: none;
+            }
+            @include media-breakpoint-up(md){
+                display: inline-block;
+                padding-bottom: .2em;
+                margin-left: 7px;
+                &.current-menu-item {
+                    a {
+                        border-color: $white;
+                    }
+                }
+                &:last-child{	
+                    margin-left: 0;
+                }
+                &:hover {
+                    ul {
+                        display: block;
+                    }
+                }//hover
+                .arrow {
+                    display: none;
+                }
+                & > a {
+                    color: $white;
+                    display: block;
+                    position: relative;
+                    padding: 5px 12px;
+                    font-size: 1em;
+                    border: 1px solid transparent;
+                    @include border-radius($radius1);
+                    &:hover{
+                        color: $text1;
+                        background-color: $white;
+                    }
+                }//a
+
+                ul{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 2.4em;
+                    background: $text1;
+                    min-width: 12em;
+                    @include border-radius($radius1);
+                    li {
+                        color: $white;
+                        &:first-child a{
+                            @include border-top-radius($radius1);
+                        }
+                        &:last-child a{
+                            @include border-bottom-radius($radius1);
+                        }
+                        a{
+                            display: block;
+                            color: inherit;
+                            padding: .4em 1em;
+                            &:hover {
+                                background-color: $color1;
+                            }
+                        }
+                    }
+                }
+            }//@include
+        }//ul > li
+        @include media-breakpoint-down(sm){
+            position: static;
+            .menu-toggler {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                border: 1px solid $white;
+                padding: .7em 0;
+                width: 40px;
+                text-align: center;
+                @include border-radius($radius1);
+            }
+            & > ul {
+                display: none;
+                background: #232429;
+                position: absolute;
+                width: 100%;
+                top: 4em;
+                right: 0;
+                li {
+                    position: relative;
+                    display: block;
+                    list-style: none;
+                    color: $white;
+                    a{
+                        display: block;
+                        color: inherit;
+                        padding: .7em 1em;
+                    }
+                    .arrow {
+                        cursor: pointer;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        width: 2.8em;
+                        z-index: 999;
+                        text-align: center;
+                        line-height: 2.8em;
+                        height: 2.8em;
+                    }
+                }//li
+                ul {
+                    padding-right: 1em;
+                }
+            }//ul
+        }//@include
+    }//navigation
+    .header-logo{
+        text-align: center;
+        font-weight: bold;
+        color: $white;
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+    }
 }

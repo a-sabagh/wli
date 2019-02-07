@@ -7211,6 +7211,8 @@ body {
 @media (min-width: 992px) {
   #header.without-search {
     padding-bottom: 40px; } }
+#header.page-header {
+  padding-bottom: 0; }
 #header:after {
   background-color: rgba(0, 0, 0, 0.5);
   content: '';

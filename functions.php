@@ -13,15 +13,11 @@ require_once 'includes/scripts.php';
 /**
  * shortcodes
  */
-
-/**
- * widgets
- */
-
+require_once 'includes/shortcodes/post-category.php';
 /**
  * metaboxes
  */
-
+require_once 'includes/metaboxes/category-icon.php';
 /**
  * other
  */

@@ -6,7 +6,7 @@ if (is_search()) {
         <h1 class="single-title text-center">نمایش جستجو بر اساس  <span class="search-item"><?php echo $s; ?></span></h1>
     </header>
     <?php
-} elseif (is_single()) {
+} elseif (is_singular()) {
     ?>
     <header class="single-header">
         <h1 class="single-title text-center"><?php the_title(); ?></h1>
