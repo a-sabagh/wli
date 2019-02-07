@@ -14,6 +14,7 @@ require_once 'includes/scripts.php';
  * shortcodes
  */
 require_once 'includes/shortcodes/post-category.php';
+require_once 'includes/shortcodes/latest-posts.php';
 /**
  * metaboxes
  */
