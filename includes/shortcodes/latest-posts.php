@@ -23,11 +23,14 @@ function wli_shortcode_latest_posts() {
         wp_reset_postdata();
         ?>
     </section>
+    <section class="text-center">
+        <?php
+        if ($lp->max_num_pages > 1) {
+            wli_pagination($lp);
+        }
+        ?>
+    </section>
     <?php
-    if ($lp->max_num_pages > 1) {
-        wli_pagination($lp);
-    }
-
     return $outpout;
 }
 
