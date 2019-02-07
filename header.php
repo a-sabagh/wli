@@ -11,11 +11,18 @@
     $header_classes[] = (is_page()) ? "page-header " : " ";
     ?>
     <body <?php body_class(); ?>>
-        <header id="header" class="container-fluid <?php
-        foreach ($header_classes as $class):
-            echo $class;
-        endforeach;
-        ?>">
+        <header id="header" 
+        <?php
+        $header_image = get_header_image();
+        if (!empty($header_image)) {
+            echo 'style="background-image: url(\'' . $header_image . '\');"';
+        }
+        ?>
+                class="container-fluid <?php
+                foreach ($header_classes as $class):
+                    echo $class;
+                endforeach;
+                ?>">
             <div class="container">
                 <div class="row navigation-wrapper align-items-center">
                     <nav class="col-md-9 col-4 navigation">
