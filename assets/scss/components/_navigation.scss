@@ -1,6 +1,6 @@
 .navigation-wrapper {
     padding: 2em;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         position: relative;
         padding: 1em;
     }
@@ -60,6 +60,7 @@
                     top: 2.4em;
                     background: $text1;
                     min-width: 12em;
+                    z-index: 99;
                     @include border-radius($radius1);
                     li {
                         color: $white;
@@ -81,7 +82,7 @@
                 }
             }//@include
         }//ul > li
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(md){
             position: static;
             .menu-toggler {
                 display: flex;
