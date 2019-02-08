@@ -10,9 +10,19 @@ function wli_search() {
             </form>
             <div class="search-form-sujestion">
                 <strong>پیشنهاد جستجو: </strong>
-                <a href="#">انقلاب ,</a>
-                <a href="#">مقام زن ,</a>
-                <a href="#">صعود اقتصادی</a>
+                <?php
+                $args = array(
+                    "orderby" => "count",
+                    "order" => "DESC",
+                    "number" => 3
+                );
+                $tags = get_tags($args);
+                foreach ($tags as $tag) {
+                    ?>
+                <a href="<?php echo get_tag_link($tag) ?>" title="<?php echo $tag->name; ?>" class="tagcloud-id-<?php echo $tag->term_id ?>" ><?php echo $tag->name; ?><span class="seprator"> , </span></a>
+                    <?php
+                }
+                ?>
             </div>
         </div>
     </div>

@@ -56,6 +56,7 @@ if (is_singular(array('post'))) {
                     </li>
                     <?php
                 endforeach;
+                wp_reset_postdata();
             endif;
             ?>
         </ul>

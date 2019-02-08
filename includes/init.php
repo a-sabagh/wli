@@ -4,7 +4,7 @@
  * init
  */
 function wli_init() {
-    add_image_size("widget-thumb", 80, 80);
+    add_image_size("blog-thumb", 430, 210);
     if (!session_id()) {
         session_start();
     }

@@ -36,7 +36,7 @@ function wli_category_icon_edit($term) {
 
 function wli_category_icon_update($term_id) {
     $input_name = $_POST['category_icon'];
-    add_term_meta($term_id, 'wli_category_icon', $input_name);
+    update_term_meta($term_id, 'wli_category_icon', $input_name);
 }
 
 add_action('category_add_form_fields', 'wli_category_icon_add', 50);
