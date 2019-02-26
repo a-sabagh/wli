@@ -54,7 +54,7 @@ $categories = get_categories($cargs);
 <div class="row home-cat-boxes">
     <div class="col-lg-4  col-sm-6">
         <div class="d-flex flex-column text-center cat-item page-type">
-            <?php $about_page = 942; ?>
+            <?php $about_page = 41; ?>
             <h3 class="cat-title"><a href="<?php echo get_the_permalink($about_page); ?>" title="<?php echo get_the_title($about_page); ?>" ><?php echo get_the_title($about_page); ?></a></h3>
             <p class="page-about"><?php echo get_post_meta($about_page,"wli_about_excerpt",true); ?></p>
             <a href="<?php echo get_the_permalink($about_page); ?>" class="btn btn-primary">بیشتر بخوانید</a>

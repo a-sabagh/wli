@@ -38,7 +38,7 @@
     </div>
     <div class="more-link d-flex justify-content-center align-items-center">
         <div class="line first flex-grow-1"></div>
-        <a href="<?php echo get_the_permalink(934); ?>" class="btn btn-primary flex-grow-0">مطالب بیشتر</a>
+        <a href="<?php echo get_the_permalink(43); ?>" class="btn btn-primary flex-grow-0">مطالب بیشتر</a>
         <div class="line last flex-grow-1"></div>
     </div>
 </section>
