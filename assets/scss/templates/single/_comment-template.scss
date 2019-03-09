@@ -1,0 +1,22 @@
+.single-comment-list {
+    padding: $singlePadding;
+    @include media-breakpoint-down(sm){
+        padding: $singlePaddingSmall;
+    }
+    border-top: 1px solid $borderColor1;
+    ul {
+        padding-right: 1em;
+    }
+    .reply {
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+    .avatar{
+        $avatarMargin : .5em;
+        margin:{
+            left: $avatarMargin;
+            top: $avatarMargin;
+            bottom: $avatarMargin;
+        }
+    }
+}

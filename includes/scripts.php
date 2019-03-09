@@ -15,3 +15,13 @@ function admin_script($hook) {
   //enqueue scripts
 }
 add_action('admin_enqueue_scripts', 'admin_script');
+
+/**
+ * add comment reply scripts before show comment form
+ */
+function rng_enqueue_comment_reply_script() {
+    if ( get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+add_action( 'comment_form_before', 'rng_enqueue_comment_reply_script' );

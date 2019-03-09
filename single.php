@@ -11,7 +11,7 @@
                         ?>
                         <header class="single-header">
                             <?php
-                            echo wli_breadcrumbs(); 
+                            echo wli_breadcrumbs();
                             get_template_part("templates/header");
                             ?>
                         </header>
@@ -22,6 +22,12 @@
                         get_template_part("templates/single/post", "categories");
                         get_template_part("templates/single/post", "like");
                         get_template_part("templates/single/post", "related");
+                        if (get_comments_number()) {
+                            get_template_part('templates/single/comment', 'template');
+                        }
+                        if (comments_open()) {
+                            get_template_part('templates/single/comment', 'form');
+                        }
                     endwhile;
                 endif;
                 ?>

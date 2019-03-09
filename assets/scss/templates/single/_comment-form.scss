@@ -1,0 +1,15 @@
+.single-comment-form {
+    padding: $singlePadding;
+    @include media-breakpoint-down(sm){
+        padding: $singlePaddingSmall;
+    }
+    border-top: 1px solid $borderColor1;
+    .comment-form-cookies-consent {
+        label {
+            margin-right: .4em;
+        }
+    }
+}
+#comment {
+    max-height: 10em;
+}
