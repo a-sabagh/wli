@@ -8,7 +8,7 @@ $like_count = (get_post_meta($post_id, "lj_like_wp", TRUE)) ? get_post_meta($pos
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" ><?php the_title(); ?></a>
     </div>
     <div class="post-meta d-flex flex-column text-md-left">
-        <span class="date"><?php the_date(); ?></span>
+        <span class="date"><?php echo get_the_date(); ?></span>
         <span class="like"><?php echo $like_count; ?></span>
     </div>
 </article>
