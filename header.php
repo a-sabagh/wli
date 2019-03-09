@@ -36,7 +36,11 @@
                         ));
                         ?>
                     </nav>
-                    <a href="#" class="col-md-3 col-8 header-logo d-flex justify-content-end" title="صعود چهل ساله" >صعود چهل ساله</a>
+                    <div class="col-md-3 col-8 header-logo d-flex justify-content-end" >
+                        <a href="<?php echo home_url(); ?>" title="صعود چهل ساله" >
+                            <img class="logo" src="<?php echo trailingslashit(get_template_directory_uri()); ?>images/logo-white.png" alt="<?php echo get_bloginfo("description"); ?>">
+                        </a>                        
+                    </div><!--.header-logo-->
                 </div><!--.navigation-wrapper-->
                 <?php
                 if (is_home() or is_front_page()) {
