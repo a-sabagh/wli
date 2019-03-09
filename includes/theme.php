@@ -144,3 +144,51 @@ if (!function_exists("share_excerpt")) {
     }
 
 }
+
+if (!function_exists("wli_add_col")) {
+
+    function wli_add_col($columns) {
+        return $columns + array('tax_id' => 'ID');
+    }
+
+}
+if (!function_exists("wli_show_id")) {
+
+    function wli_show_id($value, $name, $id) {
+        return 'tax_id' === $name ? $id : $value;
+    }
+
+}
+
+add_action("manage_edit-category_columns", 'wli_add_col');
+add_filter("manage_edit-category_sortable_columns", 'wli_add_col');
+add_filter("manage_category_custom_column", 'wli_show_id', 10, 3);
+
+if (!function_exists("wli_new_customizer_settings")) {
+
+    /**
+     * custom setting
+     * @param type $wp_customize
+     */
+    function wli_new_customizer_settings($wp_customize) {
+        // add a setting for the site logo
+        $wp_customize->add_setting('wli_home_categories');
+        // Add a control to upload the logo
+        $wp_customize->add_control
+                (
+                'wli_home_categories', array(
+            'type' => 'text',
+            'priority' => 10,
+            'section' => 'static_front_page',
+            'label' => __('شناسه دسته بندی ها'),
+            'description' => __('شناسه دسته بندی ها را با علامت کاما (,) از هم جدا کنید. 5 عدد دسته بندی نمایش می دهد.'),
+            'input_attrs' => array(
+                'style' => 'width: 100%;text-align:left;direction:ltr;margin-top: 10px;',
+                'placeholder' => __('ID,ID,ID,ID,ID')
+            )
+                )
+        );
+    }
+
+}
+add_action('customize_register', 'wli_new_customizer_settings');

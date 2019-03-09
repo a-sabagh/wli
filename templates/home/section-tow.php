@@ -5,6 +5,10 @@ $cargs = array(
     'exclude' => 1,
     'number' => 5
 );
+$carg_include = explode(",", get_theme_mod("wli_home_categories"));
+if (isset($carg_include) and count($carg_include) > 4) {
+    $cargs['include'] = $carg_include;
+}
 $categories = get_categories($cargs);
 //array_slice
 ?>
@@ -57,7 +61,7 @@ $categories = get_categories($cargs);
         <div class="d-flex flex-column text-center cat-item page-type">
             <?php $about_page = 41; ?>
             <h3 class="cat-title"><a href="<?php echo get_the_permalink($about_page); ?>" title="<?php echo get_the_title($about_page); ?>" ><?php echo get_the_title($about_page); ?></a></h3>
-            <p class="page-about"><?php echo get_post_meta($about_page,"wli_about_excerpt",true); ?></p>
+            <p class="page-about"><?php echo get_post_meta($about_page, "wli_about_excerpt", true); ?></p>
             <a href="<?php echo get_the_permalink($about_page); ?>" class="btn btn-primary">بیشتر بخوانید</a>
         </div>
     </div>
