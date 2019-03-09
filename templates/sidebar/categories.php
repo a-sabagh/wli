@@ -1,5 +1,6 @@
 <?php
 $cargs = array(
+    'parent' => 0,
     'hide_empty' => true,
     'hierarchical' => false,
     'exclude' => 1,
@@ -27,7 +28,7 @@ if (is_singular(array('post'))) {
                 foreach ($categories as $category):
                     $cq_args = array(
                         'post_type' => 'post',
-                        'posts_per_page' => -1,
+                        'posts_per_page' => 4,
                         'cat' => array($category->term_id)
                     );
                     $cq = new WP_Query($cq_args);
