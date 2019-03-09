@@ -24,7 +24,6 @@
                             <img src="<?php echo trailingslashit(WLI_TDU); ?>images/blog-thumb.jpg" class="img-fluid" alt="<?php echo get_the_excerpt(); ?>">
                         <?php } ?>
                     </a>
-                    <span class="date"><?php the_date('',  get_the_ID()); ?></span>
                     <h3 class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                     <p class="excerpt"><?php the_excerpt(); ?></p>
                 </div>

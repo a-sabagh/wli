@@ -3599,10 +3599,12 @@ body { text-align: right; }
 .cat-item .cat-title a { display: inline-block; color: #232429; }
 .cat-item .cat-body li { display: inline-block; color: #d2515a; line-height: 2em; }
 .cat-item .cat-body li a { display: inherit; color: inherit; }
+.home-body .home-cat-boxes .show-posts-base-on-cat { position: absolute; bottom: 1em; left: 2em; border: 1px solid #232429; border-radius: 50%; display: block; text-align: center; font-size: 1em; width: 25px; height: 25px; line-height: 25px; }
+.home-body .home-cat-boxes .show-posts-base-on-cat .fa { color: #232429; }
 .home-body .home-blog .img-wrapper { border-radius: 4px; }
 @media (min-width: 768px) { .home-body .home-blog .img-wrapper { max-height: 210px; overflow: hidden; display: flex; align-items: center; } }
 .home-body .home-blog .date { display: block; margin: 1em auto; font-size: .813em; font-weight: bold; color: #a6a9b7; }
-.home-body .home-blog .blog-title { color: #232429; font-size: 1.4em; }
+.home-body .home-blog .blog-title { margin: .45em auto; color: #232429; font-size: 1.4em; }
 .home-body .home-blog .blog-title a { color: inherit; display: block; }
 .home-body .home-blog .more-link { margin: 2.2em auto; }
 .home-body .home-blog .more-link a { padding: .5em 2em; }

@@ -45,6 +45,7 @@ $categories = get_categories($cargs);
                     }
                     ?>
                 </div><!--.cart-item-->
+                <a class="show-posts-base-on-cat" href="<?php echo get_category_link($category); ?>" title="<?php echo $category->name; ?>" ><i class="fa fa-angle-left"></i></a>
             </div><!--.col-lg-3-->
             <?php
         endforeach;
@@ -96,6 +97,7 @@ $categories = get_categories($cargs);
                     }
                     ?>
                 </div><!--.cart-item-->
+                <a class="show-posts-base-on-cat" href="<?php echo get_category_link($category); ?>" title="<?php echo $category->name; ?>" ><i class="fa fa-angle-left"></i></a>
             </div><!--.col-lg-3-->
             <?php
         endforeach;

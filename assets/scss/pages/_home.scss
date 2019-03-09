@@ -61,6 +61,24 @@
                 }
             }
         }
+        .show-posts-base-on-cat {
+            position: absolute;
+            bottom: 1em;
+            left: 2em;
+            $localText: $text1;
+            border: 1px solid $localText;
+            .fa {
+                color: $localText;
+            }
+            border-radius: 50%;
+            display: block;
+            text-align: center;
+            font-size: 1em;
+            $localVar: 25px;
+            width: $localVar;
+            height: $localVar;
+            line-height: $localVar;
+        }
     }//home-cat-boxes
     .home-blog {
         .img-wrapper {
@@ -80,6 +98,7 @@
             color: $text2;
         }
         .blog-title {
+            margin: .45em auto;
             color: $text1;
             font-size: 1.4em;
             a{
