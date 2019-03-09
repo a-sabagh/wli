@@ -32,7 +32,7 @@
                             'container' => '',
                             'theme_location' => 'header',
                             'walker' => new WLI_Arrow_Walker_Nav_Menu(),
-                            'depth' => '2'
+                            'depth' => '4'
                         ));
                         ?>
                     </nav>

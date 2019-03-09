@@ -31,10 +31,8 @@
                 &:last-child{	
                     margin-left: 0;
                 }
-                &:hover {
-                    ul {
-                        display: block;
-                    }
+                &:hover > ul {
+                    display: block;
                 }//hover
                 .arrow {
                     display: none;
@@ -63,6 +61,7 @@
                     z-index: 99;
                     @include border-radius($radius1);
                     li {
+                        position: relative;
                         color: $white;
                         &:first-child a{
                             @include border-top-radius($radius1);
@@ -77,6 +76,15 @@
                             &:hover {
                                 background-color: $color1;
                             }
+                        }
+                        &:hover > ul {
+                            display: block;
+                        }
+                        ul {
+                            display: none;
+                            position: absolute;
+                            right: 100%;
+                            top: 0;
                         }
                     }
                 }

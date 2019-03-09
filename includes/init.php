@@ -33,7 +33,7 @@ class WLI_Arrow_Walker_Nav_Menu extends Walker_Nav_Menu {
 
     function start_lvl(&$output, $depth, $args) {
         $indent = str_repeat("\t", $depth);
-        if ('header' == $args->theme_location && $depth == 0) {
+        if ('header' == $args->theme_location) {
             $output .='<span class="arrow"><i class="fa fa-plus"></i></span>';
         }
         $output .= "\n$indent<ul class=\"sub-menu\">\n";
