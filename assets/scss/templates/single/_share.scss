@@ -1,0 +1,31 @@
+.single-share {
+    padding: $singlePadding;
+    @include media-breakpoint-down(sm){
+        padding: $singlePaddingSmall;
+    }
+    border-top: 1px solid $borderColor1;
+    margin-top: 1em;
+    ul {
+        margin: .8em 0;
+        li {
+            display: inline-block;
+            a {
+                padding: 0 .3em;
+                font-size: 1.3em;
+                .fa {
+                    color: $text2;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+    .shortlink {
+        line-height: 1.5em;
+        background: $borderColor1;
+        padding: .1em .5em;
+    }
+    .share-link {
+        margin-right: 1.5em;
+    }
+}

@@ -21,6 +21,7 @@
                         <?php
                         get_template_part("templates/single/post", "categories");
                         get_template_part("templates/single/post", "like");
+                        get_template_part("templates/single/post", "share");
                         get_template_part("templates/single/post", "related");
                         if (get_comments_number()) {
                             get_template_part('templates/single/comment', 'template');

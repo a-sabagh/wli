@@ -19,7 +19,7 @@ function wli_search() {
                 $tags = get_tags($args);
                 foreach ($tags as $tag) {
                     ?>
-                <a href="<?php echo get_tag_link($tag) ?>" title="<?php echo $tag->name; ?>" class="tagcloud-id-<?php echo $tag->term_id ?>" ><?php echo $tag->name; ?><span class="seprator"> , </span></a>
+                    <a href="<?php echo get_tag_link($tag) ?>" title="<?php echo $tag->name; ?>" class="tagcloud-id-<?php echo $tag->term_id ?>" ><?php echo $tag->name; ?><span class="seprator"> , </span></a>
                     <?php
                 }
                 ?>
@@ -120,6 +120,27 @@ if (!function_exists("wli_breadcrumbs")) {
             </ul>
         </nav>
         <?php
+    }
+
+}
+
+if (!function_exists("rng_custom_excerpt")) {
+
+    function rng_custom_excerpt($count) {
+        $output = get_the_content();
+        $output = strip_tags($output);
+        $output = mb_substr($output, 0, $count);
+        $output = mb_substr($output, 0, mb_strrpos($output, " "));
+        $output .= "...";
+        return $output;
+    }
+
+}
+
+if (!function_exists("share_excerpt")) {
+
+    function share_excerpt() {
+        rng_custom_excerpt(140);
     }
 
 }
